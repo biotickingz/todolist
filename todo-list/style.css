@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: #fbf3f3;
+}
+
+.todo {
+  position: relative;
+  width: 422px;
+  height: 610px;
+  background: #ffffff;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 15%);
+}
+
+span {
+  display: none;
+  position: relative;
+  left: -20px;
+  color: red;
+  cursor: pointer;
+}
+
+.add-button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+
+.remove-btn {
+  display: none;
+  float: left;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  background: pink;
+  margin-right: 5px;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.placeholder {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 280px;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 28px;
+  color: #8d8a8a;
+}
+
+input {
+  border: none;
+}
+
+input.placeholder:focus {
+  outline-width: 0px;
+}
+
+hr {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  background: #dbdbdb;
+  width: 360px;
+  height: 1px;
+  border: none;
+}
+
+ul {
+  margin: 10px;
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  left: 60px;
+}
+
+li {
+  margin: 5px;
+  padding: 10px;
+  color: #8d8a8a;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+li:hover .remove-btn {
+  display: inline-block;
+}
